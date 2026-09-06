@@ -71,13 +71,13 @@ RoboMaster 2025 飞镖系统嵌入式控制代码 | STM32F427 + 双路CAN + Free
 ---
 
 ## 📂 仓库结构
-├── Core/           # 主控制逻辑（Dart.c, Auto_Load.c）
+├── Core/           # main.c  can.c  gpio.c  usart.c
 
 ├── Drivers/        # HAL 库与 CMSIS
 
-├── Middlewares/    # FreeRTOS
+├── Task/           # 主控制逻辑（Dart.c, Auto_Load.c(自动装填)）
 
-├── docs/           # 详细设计文档与截图
+├── Middlewares/    # FreeRTOS
 
 └── README.md
 ---
